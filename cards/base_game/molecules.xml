@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cards xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../cards.xsd" game="Molekuly" version="1.0">
+    
+    <molecules>
+        <molecule id="molecule_water">
+            <title>Voda</title>
+            <formula>H2O</formula>
+            <points>18</points>
+            <image>assets/recipes/h2o.png</image>
+            <lore>Oxid vodny. Zakladni stavebni kamen zivota na Zemi.</lore>
+        </molecule>
+    </molecules>
+</cards>

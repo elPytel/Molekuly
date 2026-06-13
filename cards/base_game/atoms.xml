@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cards xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../cards.xsd" game="Molekuly" version="1.0">
+    
+    <atoms>
+        <atom id="atom_H" count="20">
+            <symbol>H</symbol>
+            <name>Vodik</name>
+            <weight>1</weight>
+            <color>#FFFFFF</color>
+            <textColor>#000000</textColor>
+            <valence_electrons>1</valence_electrons>
+        </atom>
+        <atom id="atom_C" count="12">
+            <symbol>C</symbol>
+            <name>Uhlik</name>
+            <weight>12</weight>
+            <color>#333333</color>
+            <textColor>#FFFFFF</textColor>
+            <valence_electrons>4</valence_electrons>
+        </atom>
+    </atoms>
+</cards>

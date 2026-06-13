@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified">
+
+  <xs:simpleType name="ValenceInt">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="1" />
+      <xs:maxInclusive value="8" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="HexColor">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="#([a-fA-F0-9]{6}|[a-fA-F0-9]{3})" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="CountInt">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="1" />
+      <xs:maxInclusive value="50" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="CardId">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[a-zA-Z0-9_]+" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="AtomType">
+    <xs:sequence>
+      <xs:element name="symbol" type="xs:string" />
+      <xs:element name="name" type="xs:string" />
+      <xs:element name="weight" type="xs:integer" />
+      <xs:element name="color" type="HexColor" />
+      <xs:element name="textColor" type="HexColor" />
+      <xs:element name="valence_electrons" type="ValenceInt" />
+    </xs:sequence>
+    <xs:attribute name="id" type="CardId" use="required" />
+    <xs:attribute name="count" type="CountInt" use="optional" default="1" />
+  </xs:complexType>
+
+  <xs:complexType name="MoleculeType">
+    <xs:sequence>
+      <xs:element name="title" type="xs:string" />
+      <xs:element name="formula" type="xs:string" />
+      <xs:element name="points" type="xs:integer" />
+      <xs:element name="image" type="xs:string" />
+      <xs:element name="lore" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute name="id" type="CardId" use="required" />
+    <xs:attribute name="count" type="CountInt" use="optional" default="1" />
+  </xs:complexType>
+
+  <xs:element name="cards">
+    <xs:complexType>
+      <xs:sequence>
+        
+        <xs:element name="atoms" minOccurs="0" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="atom" type="AtomType" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="molecules" minOccurs="0" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="molecule" type="MoleculeType" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+      </xs:sequence>
+      <xs:attribute name="game" type="xs:string" use="optional" />
+      <xs:attribute name="version" type="xs:string" use="optional" />
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
