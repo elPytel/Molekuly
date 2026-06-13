@@ -1,21 +1,19 @@
 #!/usr/bin/env python3
-"""Merge multiple cards/*.xml files into a single cards XML.
+"""Merge multiple structured XML card files into a single valid deck XML.
 
 Usage: tools/merge_cards.py <cards_dir> [<cards_dir> ...] <output.xml>
 If output omitted, writes to merged-cards.xml in CWD.
 
 This script accepts one or more source directories. Files are merged
-in the given order which allows merging a base set (e.g. `cards/base_game`)
-followed by one or more DLC directories so DLC cards override or append.
+in the given order which allows merging a base set followed by one 
+or more DLC directories so DLC elements override or append based on ID.
 """
 import sys
 import os
 from xml.etree import ElementTree as ET
-import copy
 
 
 def merge(cards_dirs, out_path):
-    # cards_dirs may be a single string or a list of directories
     if isinstance(cards_dirs, (str,)):
         cards_dirs = [cards_dirs]
 
@@ -33,6 +31,10 @@ def merge(cards_dirs, out_path):
 
     first = True
     root = ET.Element('cards')
+    
+    # Dictionaries used to prevent duplicates and handle DLC overrides cleanly
+    atoms_dict = {}
+    molecules_dict = {}
 
     for fn in files:
         try:
@@ -40,92 +42,61 @@ def merge(cards_dirs, out_path):
         except ET.ParseError as e:
             raise SystemExit('Failed to parse %s: %s' % (fn, e))
         src = tree.getroot()
-        # copy game/version from first file if present
+        
+        # Inherit global attributes like game name or version from first file
         if first:
             for attr in ('game', 'version'):
                 if attr in src.attrib:
                     root.set(attr, src.attrib[attr])
-        # Do NOT copy `icons` from individual source files here.
-        # Icons are collected from canonical config files below to avoid
-        # duplicating the same icons block when sources include their own
-        # `<icons>` or use XIncludes. We only merge card elements from sources.
+            first = False
 
-        for card in src.findall('card'):
-            # deep copy element
-            root.append(card)
+        # Extract and map all atoms to the dictionary using ID as key
+        atoms_node = src.find('atoms')
+        if atoms_node is not None:
+            for atom in atoms_node.findall('atom'):
+                atom_id = atom.attrib.get('id')
+                if atom_id:
+                    atoms_dict[atom_id] = atom
 
-        first = False
+        # Extract and map all molecules to the dictionary using ID as key
+        molecules_node = src.find('molecules')
+        if molecules_node is not None:
+            for molecule in molecules_node.findall('molecule'):
+                mol_id = molecule.attrib.get('id')
+                if mol_id:
+                    molecules_dict[mol_id] = molecule
+
+    # Build the final XML tree array blocks according to the new XSD layout
+    if atoms_dict:
+        atoms_root = ET.SubElement(root, 'atoms')
+        # Sorting by key guarantees deterministic output on every build
+        for atom_id in sorted(atoms_dict.keys()):
+            atoms_root.append(atoms_dict[atom_id])
+
+    if molecules_dict:
+        molecules_root = ET.SubElement(root, 'molecules')
+        for mol_id in sorted(molecules_dict.keys()):
+            molecules_root.append(molecules_dict[mol_id])
+
+    # Inject the canonical validation schema location attributes
+    root.set('xmlns:xsi', 'http://www.w3.org/2001/XMLSchema-instance')
+    root.set('xsi:noNamespaceSchemaLocation', 'cards.xsd')
 
     tree = ET.ElementTree(root)
     ET.indent(tree, space='  ')
-    # also include icons from nearby config/icons.xml files (merge if icons already present)
-    icons_candidates = []
-    # repo-level config/icons.xml
-    icons_candidates.append(os.path.normpath(os.path.join(os.path.dirname(__file__), '..', 'config', 'icons.xml')))
-    # common location under cards/config/icons.xml
-    icons_candidates.append(os.path.normpath(os.path.join(os.path.dirname(__file__), '..', 'cards', 'config', 'icons.xml')))
-    # also check per-source dirs for a sibling ../config/icons.xml (covers cards/DLC/injuries.xml -> cards/config/icons.xml)
-    for cds in cards_dirs:
-        # if cds is like 'cards/DLC' then parent is 'cards'
-        parent = os.path.normpath(os.path.join(cds, '..'))
-        icons_candidates.append(os.path.normpath(os.path.join(parent, 'config', 'icons.xml')))
 
-    seen = set()
-    for icons_path in icons_candidates:
-        if not icons_path or icons_path in seen:
-            continue
-        seen.add(icons_path)
-        if not os.path.exists(icons_path):
-            continue
-        try:
-            icons_tree = ET.parse(icons_path)
-        except ET.ParseError as e:
-            raise SystemExit('Failed to parse icons file %s: %s' % (icons_path, e))
-        icons_src = icons_tree.getroot()
-        # config file may be <icons> or have <icons> child
-        config_icons = icons_src if icons_src.tag == 'icons' else icons_src.find('icons')
-        if config_icons is not None:
-            existing_icons = root.find('icons')
-            if existing_icons is None:
-                # ensure icons are inserted before any card elements
-                root.insert(0, copy.deepcopy(config_icons))
-            else:
-                # append children but avoid duplicates by (tag,name) when possible
-                seen_children = set()
-                for c in existing_icons:
-                    name = c.attrib.get('name')
-                    seen_children.add((c.tag, name))
-                for child in list(config_icons):
-                    key = (child.tag, child.attrib.get('name'))
-                    if key in seen_children:
-                        continue
-                    existing_icons.append(copy.deepcopy(child))
-                    seen_children.add(key)
-
-    # ensure icons element is the first child if present
-    existing_icons = root.find('icons')
-    if existing_icons is not None:
-        # if not already first, move it to the front
-        try:
-            if root[0] is not existing_icons:
-                root.remove(existing_icons)
-                root.insert(0, existing_icons)
-        except IndexError:
-            # root is empty or other unexpected state — ignore
-            pass
-    # ensure output directory exists
+    # Verify and create output directory structure if required
     out_dir = os.path.dirname(out_path)
     if out_dir:
         os.makedirs(out_dir, exist_ok=True)
+        
     tree.write(out_path, encoding='utf-8', xml_declaration=True)
 
 
 def main(argv):
-    # Expect at least: <src_dir> <out.xml>
     if len(argv) < 2:
         print(__doc__)
         return 2
-    # All arguments except the last are source directories
     src_dirs = argv[:-1]
     out_path = argv[-1]
     merge(src_dirs, out_path)

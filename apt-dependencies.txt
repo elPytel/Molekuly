@@ -1,6 +1,6 @@
 libxml2-utils
 xsltproc
+python3-pip
 pylint
 pandoc
 fonts-symbola
-wkhtmltopdf
