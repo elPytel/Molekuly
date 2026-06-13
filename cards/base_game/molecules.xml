@@ -2,12 +2,84 @@
 <cards xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../cards.xsd" game="Molekuly" version="1.0">
     
     <molecules>
-        <molecule id="molecule_water">
+        <molecule id="recipe_water" count="4">
             <title>Voda</title>
             <formula>H2O</formula>
             <points>18</points>
-            <image>assets/recipes/h2o.png</image>
-            <lore>Oxid vodny. Zakladni stavebni kamen zivota na Zemi.</lore>
+            <image>assets/molecules/h2o.png</image>
+            <lore>Oxid vodny. Zakladni stavebni kamen zivota a nejjednodussi cil pro zacatek hry.</lore>
+        </molecule>
+
+        <molecule id="recipe_salt" count="3">
+            <title>Kuchynska sul</title>
+            <formula>NaCl</formula>
+            <points>58</points>
+            <image>assets/molecules/nacl.png</image>
+            <lore>Chlorid sodny. Nezbytny pro zivot. Stabilni iontova vazba, kterou lze elektrolizou rozlozit.</lore>
+        </molecule>
+
+        <molecule id="recipe_chlorine_gas" count="2">
+            <title>Chlorovy plyn</title>
+            <formula>Cl2</formula>
+            <points>70</points>
+            <image>assets/molecules/cl2.png</image>
+            <lore>Toxicky zelenožluty plyn vyuzivany jako chemicka zbran. Vznika rozkladem kuchynske soli.</lore>
+        </molecule>
+
+        <molecule id="recipe_co2" count="3">
+            <title>Oxid uhlicity</title>
+            <formula>CO2</formula>
+            <points>44</points>
+            <image>assets/molecules/co2.png</image>
+            <lore>Plyn ktery vydechujeme a ktery rostliny potrebuji pro fotosyntezu. Obsahuje dve dvojne vazby.</lore>
+        </molecule>
+
+        <molecule id="recipe_soda" count="2">
+            <title>Jedla soda</title>
+            <formula>NaHCO3</formula>
+            <points>84</points>
+            <image>assets/molecules/nahco3.png</image>
+            <lore>Hydrogenuhlicitan sodny. Pouziva se k peceni nebo k neutralizaci zaludecnich kyselin pri paleni zahy.</lore>
+        </molecule>
+
+        <molecule id="recipe_ethanol" count="3">
+            <title>Ethanol</title>
+            <formula>C2H5OH</formula>
+            <points>46</points>
+            <image>assets/molecules/c2h5oh.png</image>
+            <lore>Bezny alkohol. Vyuziva se jako dezinfekce, palivo nebo v lihovarnictvi. Zakladni organicka sloučenina.</lore>
+        </molecule>
+
+        <molecule id="recipe_vinegar" count="2">
+            <title>Kyselina octova</title>
+            <formula>CH3COOH</formula>
+            <points>60</points>
+            <image>assets/molecules/ch3cooh.png</image>
+            <lore>Kyselina ethanova. Ocet v kuchyni sluzi k dochucovani a konzervaci potravin nebo k cisteni vodniho kamene.</lore>
+        </molecule>
+
+        <molecule id="recipe_glycerol" count="2">
+            <title>Glycerol</title>
+            <formula>C3H8O3</formula>
+            <points>92</points>
+            <image>assets/molecules/c3h8o3.png</image>
+            <lore>Trojycitny alkohol ktery vznika jako vedlejsi produkt pri vyrobe mydla. Sam o sobe skvele hydratuje pokozku.</lore>
+        </molecule>
+
+        <molecule id="recipe_nitroglycerin" count="1">
+            <title>Nitroglycerin</title>
+            <formula>C3H5N3O9</formula>
+            <points>227</points>
+            <image>assets/molecules/nitroglycerin.png</image>
+            <lore>Extremne nestabilni trhavina. Vznika nitraci glycerolu. Staci prudky otres a body leti do povetri.</lore>
+        </molecule>
+
+        <molecule id="recipe_glucose" count="1">
+            <title>Glukoza</title>
+            <formula>C6H12O6</formula>
+            <points>180</points>
+            <image>assets/molecules/c6h12o6.png</image>
+            <lore>Hroznovy cukr. Hlavni zdroj energie pro bunecne dychani. Obri a krasny projekt pro trpeliveho hrace.</lore>
         </molecule>
     </molecules>
 </cards>

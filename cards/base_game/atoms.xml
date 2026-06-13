@@ -2,7 +2,7 @@
 <cards xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../cards.xsd" game="Molekuly" version="1.0">
     
     <atoms>
-        <atom id="atom_H" count="20">
+        <atom id="atom_H" count="2">
             <symbol>H</symbol>
             <name>Vodik</name>
             <weight>1</weight>
@@ -10,13 +10,61 @@
             <textColor>#000000</textColor>
             <valence_electrons>1</valence_electrons>
         </atom>
-        <atom id="atom_C" count="12">
+        <atom id="atom_C" count="2">
             <symbol>C</symbol>
             <name>Uhlik</name>
             <weight>12</weight>
             <color>#333333</color>
             <textColor>#FFFFFF</textColor>
             <valence_electrons>4</valence_electrons>
+        </atom>
+        <atom id="atom_O" count="6">
+            <symbol>O</symbol>
+            <name>Kyslik</name>
+            <weight>16</weight>
+            <color>#FF4D4D</color>
+            <textColor>#FFFFFF</textColor>
+            <valence_electrons>6</valence_electrons>
+        </atom>
+        <atom id="atom_N" count="6">
+            <symbol>N</symbol>
+            <name>Dusik</name>
+            <weight>14</weight>
+            <color>#3366FF</color>
+            <textColor>#FFFFFF</textColor>
+            <valence_electrons>5</valence_electrons>
+        </atom>
+        <atom id="atom_Na" count="6">
+            <symbol>Na</symbol>
+            <name>Sodik</name>
+            <weight>23</weight>
+            <color>#9933FF</color>
+            <textColor>#FFFFFF</textColor>
+            <valence_electrons>1</valence_electrons>
+        </atom>
+        <atom id="atom_Cl" count="6">
+            <symbol>Cl</symbol>
+            <name>Chlor</name>
+            <weight>35</weight>
+            <color>#00CC44</color>
+            <textColor>#FFFFFF</textColor>
+            <valence_electrons>7</valence_electrons>
+        </atom>
+        <atom id="atom_S" count="4">
+            <symbol>S</symbol>
+            <name>Sira</name>
+            <weight>32</weight>
+            <color>#FFCC00</color>
+            <textColor>#000000</textColor>
+            <valence_electrons>6</valence_electrons>
+        </atom>
+        <atom id="atom_P" count="4">
+            <symbol>P</symbol>
+            <name>Fosfor</name>
+            <weight>31</weight>
+            <color>#FF9900</color>
+            <textColor>#000000</textColor>
+            <valence_electrons>5</valence_electrons>
         </atom>
     </atoms>
 </cards>
