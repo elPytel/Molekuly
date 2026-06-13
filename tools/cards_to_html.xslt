@@ -142,50 +142,62 @@
             border: 0.3mm solid #fff;
           }
 
-          /* CSS distribution rules based on electron total count */
-          .e-count-1 .electron-dot:nth-child(1) { top: -1.5mm; left: 14.5mm; }
+           /* ========================================================
+             CLEAN LEWIS DOT GRID SYSTEM (N-S-E-W Cardinal Alignment)
+             Single dots centered at 14.5mm, pairs split at 11mm &amp; 18mm
+             ======================================================== */
+          
+           /* 1 Valence Electron (H, Na, K) -> 1 open slot at North */
+           .e-count-1 .electron-dot:nth-child(1) { top: -1.5mm; left: 14.5mm; }
 
-          .e-count-2 .electron-dot:nth-child(1) { top: -1.5mm; left: 14.5mm; }
-          .e-count-2 .electron-dot:nth-child(2) { bottom: -1.5mm; left: 14.5mm; }
+          /* 2 Valence Electrons -> 2 open slots (North &amp; South) */
+           .e-count-2 .electron-dot:nth-child(1) { top: -1.5mm; left: 14.5mm; }
+           .e-count-2 .electron-dot:nth-child(2) { bottom: -1.5mm; left: 14.5mm; }
 
-          .e-count-3 .electron-dot:nth-child(1) { top: -1.5mm; left: 14.5mm; }
-          .e-count-3 .electron-dot:nth-child(2) { bottom: 2mm; left: 2mm; }
-          .e-count-3 .electron-dot:nth-child(3) { bottom: 2mm; right: 2mm; }
+           /* 3 Valence Electrons -> 3 open slots (North, East, West) */
+           .e-count-3 .electron-dot:nth-child(1) { top: -1.5mm; left: 14.5mm; }
+           .e-count-3 .electron-dot:nth-child(2) { top: 14.5mm; right: -1.5mm; }
+           .e-count-3 .electron-dot:nth-child(3) { top: 14.5mm; left: -1.5mm; }
 
-          .e-count-4 .electron-dot:nth-child(1) { top: -1.5mm; left: 14.5mm; }
-          .e-count-4 .electron-dot:nth-child(2) { bottom: -1.5mm; left: 14.5mm; }
-          .e-count-4 .electron-dot:nth-child(3) { top: 14.5mm; left: -1.5mm; }
-          .e-count-4 .electron-dot:nth-child(4) { top: 14.5mm; right: -1.5mm; }
+           /* 4 Valence Electrons (C) -> 4 open slots (Perfect Cross) */
+           .e-count-4 .electron-dot:nth-child(1) { top: -1.5mm; left: 14.5mm; }
+           .e-count-4 .electron-dot:nth-child(2) { bottom: -1.5mm; left: 14.5mm; }
+           .e-count-4 .electron-dot:nth-child(3) { top: 14.5mm; right: -1.5mm; }
+           .e-count-4 .electron-dot:nth-child(4) { top: 14.5mm; left: -1.5mm; }
 
-          .e-count-5 .electron-dot:nth-child(1) { top: -1.5mm; left: 14.5mm; }
-          .e-count-5 .electron-dot:nth-child(2) { bottom: -1.5mm; left: 14.5mm; }
-          .e-count-5 .electron-dot:nth-child(3) { top: 14.5mm; left: -1.5mm; }
-          .e-count-5 .electron-dot:nth-child(4) { top: 14.5mm; right: -1.5mm; }
-          .e-count-5 .electron-dot:nth-child(5) { top: 4mm; left: 4mm; }
+           /* 5 Valence Electrons (N, P) -> 1 paired slot (North), 3 open slots (S, E, W) */
+           .e-count-5 .electron-dot:nth-child(1) { top: -1.5mm; left: 11mm; }
+           .e-count-5 .electron-dot:nth-child(2) { top: -1.5mm; left: 18mm; }
+           .e-count-5 .electron-dot:nth-child(3) { bottom: -1.5mm; left: 14.5mm; }
+           .e-count-5 .electron-dot:nth-child(4) { top: 14.5mm; right: -1.5mm; }
+           .e-count-5 .electron-dot:nth-child(5) { top: 14.5mm; left: -1.5mm; }
 
-          .e-count-6 .electron-dot:nth-child(1) { top: -1.5mm; left: 10mm; }
-          .e-count-6 .electron-dot:nth-child(2) { top: -1.5mm; right: 10mm; }
-          .e-count-6 .electron-dot:nth-child(3) { bottom: -1.5mm; left: 10mm; }
-          .e-count-6 .electron-dot:nth-child(4) { bottom: -1.5mm; right: 10mm; }
-          .e-count-6 .electron-dot:nth-child(5) { top: 14.5mm; left: -1.5mm; }
-          .e-count-6 .electron-dot:nth-child(6) { top: 14.5mm; right: -1.5mm; }
+           /* 6 Valence Electrons (O, S) -> 2 paired slots (North, South), 2 open slots (E, W) */
+           .e-count-6 .electron-dot:nth-child(1) { top: -1.5mm; left: 11mm; }
+           .e-count-6 .electron-dot:nth-child(2) { top: -1.5mm; left: 18mm; }
+           .e-count-6 .electron-dot:nth-child(3) { bottom: -1.5mm; left: 11mm; }
+           .e-count-6 .electron-dot:nth-child(4) { bottom: -1.5mm; left: 18mm; }
+           .e-count-6 .electron-dot:nth-child(5) { top: 14.5mm; right: -1.5mm; }
+           .e-count-6 .electron-dot:nth-child(6) { top: 14.5mm; left: -1.5mm; }
 
-          .e-count-7 .electron-dot:nth-child(1) { top: -1.5mm; left: 10mm; }
-          .e-count-7 .electron-dot:nth-child(2) { top: -1.5mm; right: 10mm; }
-          .e-count-7 .electron-dot:nth-child(3) { bottom: -1.5mm; left: 10mm; }
-          .e-count-7 .electron-dot:xsld-child(4) { bottom: -1.5mm; right: 10mm; }
-          .e-count-7 .electron-dot:nth-child(5) { top: 10mm; left: -1.5mm; }
-          .e-count-7 .electron-dot:nth-child(6) { bottom: 10mm; left: -1.5mm; }
-          .e-count-7 .electron-dot:nth-child(7) { top: 14.5mm; right: -1.5mm; }
+           /* 7 Valence Electrons (Cl) -> 3 paired slots (N, S, E), 1 open slot (West) */
+           .e-count-7 .electron-dot:nth-child(1) { top: -1.5mm; left: 11mm; }
+           .e-count-7 .electron-dot:nth-child(2) { top: -1.5mm; left: 18mm; }
+           .e-count-7 .electron-dot:nth-child(3) { bottom: -1.5mm; left: 11mm; }
+           .e-count-7 .electron-dot:nth-child(4) { bottom: -1.5mm; left: 18mm; }
+           .e-count-7 .electron-dot:nth-child(5) { right: -1.5mm; top: 11mm; }
+           .e-count-7 .electron-dot:nth-child(6) { right: -1.5mm; top: 18mm; }
+           .e-count-7 .electron-dot:nth-child(7) { top: 14.5mm; left: -1.5mm; }
 
-          .e-count-8 .electron-dot:nth-child(1) { top: -1.5mm; left: 10mm; }
-          .e-count-8 .electron-dot:nth-child(2) { top: -1.5mm; right: 10mm; }
-          .e-count-8 .electron-dot:nth-child(3) { bottom: -1.5mm; left: 10mm; }
-          .e-count-8 .electron-dot:nth-child(4) { bottom: -1.5mm; right: 10mm; }
-          .e-count-8 .electron-dot:nth-child(5) { top: 10mm; left: -1.5mm; }
-          .e-count-8 .electron-dot:nth-child(6) { bottom: 10mm; left: -1.5mm; }
-          .e-count-8 .electron-dot:nth-child(7) { top: 10mm; right: -1.5mm; }
-          .e-count-8 .electron-dot:nth-child(8) { bottom: 10mm; right: -1.5mm; }
+           /* 8 Valence Electrons -> 4 paired slots (Full Stable Octet) */
+           .e-count-8 .electron-dot:nth-child(1) { top: -1.5mm; left: 11mm; }
+           .e-count-8 .electron-dot:nth-child(2) { top: -1.5mm; left: 18mm; }
+           .e-count-8 .electron-dot:nth-child(3) { bottom: -1.5mm; left: 11mm; }
+           .e-count-8 .electron-dot:nth-child(4) { bottom: -1.5mm; left: 18mm; }
+           .e-count-8 .electron-dot:nth-child(5) { right: -1.5mm; top: 11mm; }
+           .e-count-8 .electron-dot:nth-child(6) { right: -1.5mm; top: 18mm; }
+           .e-count-8 .electron-dot:nth-child(7) { left: -1.5mm; top: 11mm; }
+           .e-count-8 .electron-dot:nth-child(8) { left: -1.5mm; top: 18mm; }
 
 
           /* =========================================

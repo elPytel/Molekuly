@@ -7,39 +7,39 @@
             <formula>H2O</formula>
             <points>18</points>
             <image>assets/molecules/h2o.png</image>
-            <lore>Oxid vodny. Zakladni stavebni kamen zivota a nejjednodussi cil pro zacatek hry.</lore>
+            <lore>Oxid vodný. Základní stavební kámen života a nejjednodušší cíl pro začátek hry.</lore>
         </molecule>
 
         <molecule id="recipe_salt" count="3">
-            <title>Kuchynska sul</title>
+            <title>Kuchyňská sůl</title>
             <formula>NaCl</formula>
             <points>58</points>
             <image>assets/molecules/nacl.png</image>
-            <lore>Chlorid sodny. Nezbytny pro zivot. Stabilni iontova vazba, kterou lze elektrolizou rozlozit.</lore>
+            <lore>Chlorid sodný. Nezbytný pro život. Stabilní iontová vazba, kterou lze elektrolýzou rozložit.</lore>
         </molecule>
 
         <molecule id="recipe_chlorine_gas" count="2">
-            <title>Chlorovy plyn</title>
+            <title>Chlorový plyn</title>
             <formula>Cl2</formula>
             <points>70</points>
             <image>assets/molecules/cl2.png</image>
-            <lore>Toxicky zelenožluty plyn vyuzivany jako chemicka zbran. Vznika rozkladem kuchynske soli.</lore>
+            <lore>Toxický zelenožlutý plyn využívaný jako chemická zbraň. Vzniká rozkladem kuchyňské soli.</lore>
         </molecule>
 
         <molecule id="recipe_co2" count="3">
-            <title>Oxid uhlicity</title>
+            <title>Oxid uhličitý</title>
             <formula>CO2</formula>
             <points>44</points>
             <image>assets/molecules/co2.png</image>
-            <lore>Plyn ktery vydechujeme a ktery rostliny potrebuji pro fotosyntezu. Obsahuje dve dvojne vazby.</lore>
+            <lore>Plyn, který vydechujeme a který rostliny potřebují pro fotosyntézu. Obsahuje dvě dvojné vazby.</lore>
         </molecule>
 
         <molecule id="recipe_soda" count="2">
-            <title>Jedla soda</title>
+            <title>Jedlá soda</title>
             <formula>NaHCO3</formula>
             <points>84</points>
             <image>assets/molecules/nahco3.png</image>
-            <lore>Hydrogenuhlicitan sodny. Pouziva se k peceni nebo k neutralizaci zaludecnich kyselin pri paleni zahy.</lore>
+            <lore>Hydrogenuhličitan sodný. Používá se k pečení nebo k neutralizaci žaludečních kyselin při pálení žáhy.</lore>
         </molecule>
 
         <molecule id="recipe_ethanol" count="3">
@@ -47,15 +47,15 @@
             <formula>C2H5OH</formula>
             <points>46</points>
             <image>assets/molecules/c2h5oh.png</image>
-            <lore>Bezny alkohol. Vyuziva se jako dezinfekce, palivo nebo v lihovarnictvi. Zakladni organicka sloučenina.</lore>
+            <lore>Běžný alkohol. Využívá se jako dezinfekce, palivo nebo v lihovarnictví. Základní organická sloučenina.</lore>
         </molecule>
 
         <molecule id="recipe_vinegar" count="2">
-            <title>Kyselina octova</title>
+            <title>Kyselina octová</title>
             <formula>CH3COOH</formula>
             <points>60</points>
             <image>assets/molecules/ch3cooh.png</image>
-            <lore>Kyselina ethanova. Ocet v kuchyni sluzi k dochucovani a konzervaci potravin nebo k cisteni vodniho kamene.</lore>
+            <lore>Kyselina ethanová. Ocet v kuchyni slouží k dochucování a konzervaci potravin nebo k čištění vodního kamene.</lore>
         </molecule>
 
         <molecule id="recipe_glycerol" count="2">
@@ -63,7 +63,7 @@
             <formula>C3H8O3</formula>
             <points>92</points>
             <image>assets/molecules/c3h8o3.png</image>
-            <lore>Trojycitny alkohol ktery vznika jako vedlejsi produkt pri vyrobe mydla. Sam o sobe skvele hydratuje pokozku.</lore>
+            <lore>Trojitý alkohol, který vzniká jako vedlejší produkt při výrobě mýdla. Sám o sobě skvěle hydratuje pokožku.</lore>
         </molecule>
 
         <molecule id="recipe_nitroglycerin" count="1">
@@ -71,15 +71,175 @@
             <formula>C3H5N3O9</formula>
             <points>227</points>
             <image>assets/molecules/nitroglycerin.png</image>
-            <lore>Extremne nestabilni trhavina. Vznika nitraci glycerolu. Staci prudky otres a body leti do povetri.</lore>
+            <lore>Extrémně nestabilní trhavina. Vzniká nitrací glycerolu. Stačí prudký otřes a body letí do povětří.</lore>
         </molecule>
 
         <molecule id="recipe_glucose" count="1">
-            <title>Glukoza</title>
+            <title>Glukóza</title>
             <formula>C6H12O6</formula>
             <points>180</points>
             <image>assets/molecules/c6h12o6.png</image>
-            <lore>Hroznovy cukr. Hlavni zdroj energie pro bunecne dychani. Obri a krasny projekt pro trpeliveho hrace.</lore>
+            <lore>Hroznový cukr. Hlavní zdroj energie pro buněčné dýchání. Obří a krásný projekt pro trpělivého hráče.</lore>
+        </molecule>
+
+        <molecule id="recipe_methanol" count="2">
+            <title>Methanol</title>
+            <formula>CH3OH</formula>
+            <points>32</points>
+            <image>assets/molecules/methanol.png</image>
+            <lore>Dřevný líh. Prudce jedovatá kapalina zaměnitelná s ethanolem. Způsobuje slepotu a selhání organismu.</lore>
+        </molecule>
+
+        <molecule id="recipe_urea" count="2">
+            <title>Močovina</title>
+            <formula>CH4N2O</formula>
+            <points>60</points>
+            <image>assets/molecules/urea.png</image>
+            <lore>Urea. Vysoce účinné dusíkaté hnojivo, které má zároveň nezastupitelnou roli v hydratačních krémech.</lore>
+        </molecule>
+
+        <molecule id="recipe_ammonium_nitrate" count="2">
+            <title>Dusičnan amonný</title>
+            <formula>NH4NO3</formula>
+            <points>80</points>
+            <image>assets/molecules/ammonium_nitrate.png</image>
+            <lore>Lédek amonný. Masivně využívané zemědělské hnojivo, které však figuruje jako hlavní složka průmyslových trhavin.</lore>
+        </molecule>
+
+        <molecule id="recipe_toluene" count="2">
+            <title>Toluen</title>
+            <formula>C7H8</formula>
+            <points>92</points>
+            <image>assets/molecules/toluene.png</image>
+            <lore>Aromatický uhlovodík, běžně používaný jako průmyslové rozpouštědlo barev. V organické syntéze slouží jako přímý základ pro výrobu trhaviny TNT.</lore>
+        </molecule>
+
+        <molecule id="recipe_tnt" count="1">
+            <title>TNT (Trinitrotoluen)</title>
+            <formula>C7H5N3O6</formula>
+            <points>227</points>
+            <image>assets/molecules/tnt.png</image>
+            <lore>Klasická vojenská i průmyslová výbušnina. Je velmi bezpečná na manipulaci a stabilní – k samotné detonaci bezpodmínečně vyžaduje rozbušku.</lore>
+        </molecule>
+
+        <molecule id="recipe_potassium_nitrate" count="2">
+            <title>Dusičnan draselný</title>
+            <formula>KNO3</formula>
+            <points>101</points>
+            <image>assets/molecules/potassium_nitrate.png</image>
+            <lore>Draselný lédek. Klíčový oxidant v černém střelném prachu. V zemědělství slouží jako minerální hnojivo.</lore>
+        </molecule>
+
+        <molecule id="recipe_methane" count="1">
+            <title>Methan</title>
+            <formula>CH4</formula>
+            <points>16</points>
+            <image>assets/molecules/methane.png</image>
+            <lore>Nejjednodušší uhlovodík a hlavní složka zemního plynu. Vzniká při rozkladu organických látek, například v trávicím traktu skotu nebo na dně bažin.</lore>
+        </molecule>
+
+        <molecule id="recipe_ammonia" count="1">
+            <title>Amoniak</title>
+            <formula>NH3</formula>
+            <points>17</points>
+            <image>assets/molecules/ammonia.png</image>
+            <lore>Čpavek. Bezbarvý, silně štiplavý plyn. V průmyslu je naprosto klíčový pro výrobu hnojiv, kyseliny dusičné a čistících prostředků.</lore>
+        </molecule>
+
+        <molecule id="recipe_carbon_monoxide" count="2">
+            <title>Oxid uhelnatý</title>
+            <formula>CO</formula>
+            <points>28</points>
+            <image>assets/molecules/co.png</image>
+            <lore>Prudce jedovatý plyn bez barvy a zápachu. Vzniká při nedokonalém spalování. V těle se váže na hemoglobin mnohem silněji než kyslík a způsobuje udušení.</lore>
+        </molecule>
+
+        <molecule id="recipe_hydrogen_peroxide" count="3">
+            <title>Peroxid vodíku</title>
+            <formula>H2O2</formula>
+            <points>34</points>
+            <image>assets/molecules/h2o2.png</image>
+            <lore>Běžná dezinfekce ran. Ve vyšších koncentracích slouží v kosmetice k odbarvování vlasů (peroxidová blond) nebo jako raketové palivo.</lore>
+        </molecule>
+
+        <molecule id="recipe_hydrogen_chloride" count="3">
+            <title>Chlorovodík</title>
+            <formula>HCl</formula>
+            <points>36</points>
+            <image>assets/molecules/hcl.png</image>
+            <lore>Ostrý, štiplavý plyn. Jeho rozpuštěním ve vodě vzniká kyselina chlorovodíková (solná), která nám v žaludku pomáhá trávit potravu a hubit bakterie.</lore>
+        </molecule>
+
+        <molecule id="recipe_vitamin_c" count="1">
+            <title>Vitamín C</title>
+            <formula>C6H8O6</formula>
+            <points>176</points>
+            <image>assets/molecules/vitamin_c.png</image>
+            <lore>Kyselina askorbová. Klíčový antioxidant nezbytný pro imunitu a tvorbu kolagenu. Lidé ho na rozdíl od většiny zvířat nedokážou sami syntetizovat.</lore>
+        </molecule>
+
+        <molecule id="recipe_vitamin_b3" count="2">
+            <title>Vitamín B3</title>
+            <formula>C6H5NO2</formula>
+            <points>123</points>
+            <image>assets/molecules/vitamin_b3.png</image>
+            <lore>Niacin. Podílí se na metabolismu sacharidů a tuků. Jeho nedostatek v potravě způsobuje nemoc zvanou pelagra (drsná kůže).</lore>
+        </molecule>
+
+        <molecule id="recipe_vitamin_b3" count="2">
+            <title>Vitamín B3</title>
+            <formula>C6H5NO2</formula>
+            <points>123</points>
+            <image>assets/molecules/vitamin_b3.png</image>
+            <lore>Niacin. Podílí se na metabolismu sacharidů a tuků. Jeho nedostatek v potravě způsobuje nemoc zvanou pelagra (drsná kůže).</lore>
+        </molecule>
+
+        <molecule id="recipe_salicylic_acid" count="2">
+            <title>Kyselina salicylová</title>
+            <formula>C7H6O3</formula>
+            <points>138</points>
+            <image>assets/molecules/salicylic_acid.png</image>
+            <lore>Beta-hydroxykyselina (BHA) masivně využívaná v kosmetice k čištění pleti a uvolňování ucpaných pórů. Přirozeně se vyskytuje v kůře vrby bílé.</lore>
+        </molecule>
+
+        <molecule id="recipe_lactic_acid" count="2">
+            <title>Kyselina mléčná</title>
+            <formula>C3H6O3</formula>
+            <points>90</points>
+            <image>assets/molecules/lactic_acid.png</image>
+            <lore>V kosmetice se využívá pro hydrataci a omlazení pleti (AHA kyselina). Přirozeně vzniká při mléčném kvašení jogurtů nebo v lidských svalech při extrémní zátěži.</lore>
+        </molecule>
+
+        <molecule id="recipe_caffeine" count="1">
+            <title>Kofein</title>
+            <formula>C8H10N4O2</formula>
+            <points>194</points>
+            <image>assets/molecules/caffeine.png</image>
+            <lore>Přírodní alkaloid, který stimuluje centrální nervovou soustavu a potlačuje únavu. Přirozeně se nachází v kávových zrnech, čajových lístcích a kakaových bobech.</lore>
+        </molecule>
+
+        <molecule id="recipe_aspirin" count="1">
+            <title>Aspirin</title>
+            <formula>C9H8O4</formula>
+            <points>180</points>
+            <image>assets/molecules/aspirin.png</image>
+            <lore>Kyselina acetylsalicylová. Jeden z nejrozšířenějších léků na světě, který tlumí bolest, snižuje horečku a potlačuje záněty. Funguje také jako prevence proti srážení krve.</lore>
+        </molecule>
+
+        <molecule id="recipe_paracetamol" count="2">
+            <title>Paracetamol</title>
+            <formula>C8H9NO2</formula>
+            <points>151</points>
+            <image>assets/molecules/paracetamol.png</image>
+            <lore>Široce využívané léčivo proti bolesti a horečce. Na rozdíl od Aspirinu nemá protizánětlivé účinky, ale je šetrnější k žaludku. Ve vysokých dávkách je však toxický pro játra.</lore>
+        </molecule>
+
+        <molecule id="recipe_nicotine" count="1">
+            <title>Nikotin</title>
+            <formula>C10H14N2</formula>
+            <points>162</points>
+            <image>assets/molecules/nicotine.png</image>
+            <lore>Rostlinný alkaloid obsažený v tabáku. Má stimulační i relaxační účinky, ale je vysoce návykový. Rostliny ho produkují jako přirozenou obranu (insekticid) proti hmyzu.</lore>
         </molecule>
     </molecules>
 </cards>

@@ -66,5 +66,13 @@
             <textColor>#000000</textColor>
             <valence_electrons>5</valence_electrons>
         </atom>
+        <atom id="atom_K" count="4">
+            <symbol>K</symbol>
+            <name>Draslik</name>
+            <weight>39</weight>
+            <color>#B380FF</color>
+            <textColor>#FFFFFF</textColor>
+            <valence_electrons>1</valence_electrons>
+        </atom>
     </atoms>
 </cards>
