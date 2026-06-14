@@ -2,7 +2,7 @@
 <cards xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../cards.xsd" game="Molekuly" version="1.0">
     
     <molecules>
-        <molecule id="recipe_water" count="4">
+        <molecule id="recipe_water" count="1">
             <title>Voda</title>
             <formula>H2O</formula>
             <smiles>O</smiles>
@@ -11,7 +11,7 @@
             <lore>Oxid vodný. Základní stavební kámen života.</lore>
         </molecule>
 
-        <molecule id="recipe_salt" count="3">
+        <molecule id="recipe_salt" count="1">
             <title>Kuchyňská sůl</title>
             <formula>NaCl</formula>
             <smiles>[Na+].[Cl-]</smiles>
@@ -20,7 +20,7 @@
             <lore>Chlorid sodný. Nezbytný pro život. Stabilní iontová vazba, kterou lze elektrolýzou rozložit.</lore>
         </molecule>
 
-        <molecule id="recipe_chlorine_gas" count="2">
+        <molecule id="recipe_chlorine_gas" count="1">
             <title>Chlorový plyn</title>
             <formula>Cl2</formula>
             <smiles>ClCl</smiles>
@@ -29,7 +29,7 @@
             <lore>Toxický zelenožlutý plyn využívaný jako chemická zbraň. Vzniká rozkladem kuchyňské soli.</lore>
         </molecule>
 
-        <molecule id="recipe_co2" count="3">
+        <molecule id="recipe_co2" count="1">
             <title>Oxid uhličitý</title>
             <formula>CO2</formula>
             <smiles>O=C=O</smiles>
@@ -38,7 +38,7 @@
             <lore>Plyn, který vydechujeme a který rostliny potřebují pro fotosyntézu. Obsahuje dvě dvojné vazby.</lore>
         </molecule>
 
-        <molecule id="recipe_soda" count="2">
+        <molecule id="recipe_soda" count="1">
             <title>Jedlá soda</title>
             <formula>NaHCO3</formula>
             <smiles>[Na+].[O-]C(=O)O</smiles>
@@ -47,7 +47,7 @@
             <lore>Hydrogenuhličitan sodný. Používá se k pečení nebo k neutralizaci žaludečních kyselin při pálení žáhy.</lore>
         </molecule>
 
-        <molecule id="recipe_ethanol" count="3">
+        <molecule id="recipe_ethanol" count="1">
             <title>Ethanol</title>
             <formula>C2H5OH</formula>
             <smiles>CCO</smiles>
@@ -56,7 +56,7 @@
             <lore>Běžný alkohol. Využívá se jako dezinfekce, palivo nebo v lihovarnictví. Základní organická sloučenina.</lore>
         </molecule>
 
-        <molecule id="recipe_vinegar" count="2">
+        <molecule id="recipe_vinegar" count="1">
             <title>Kyselina octová</title>
             <formula>CH3COOH</formula>
             <smiles>CC(=O)O</smiles>
@@ -65,7 +65,7 @@
             <lore>Kyselina ethanová. Ocet v kuchyni slouží k dochucování a konzervaci potravin nebo k čištění vodního kamene.</lore>
         </molecule>
 
-        <molecule id="recipe_glycerol" count="2">
+        <molecule id="recipe_glycerol" count="1">
             <title>Glycerol</title>
             <formula>C3H8O3</formula>
             <smiles>C(C(CO)O)O</smiles>
@@ -92,7 +92,7 @@
             <lore>Hroznový cukr. Hlavní zdroj energie pro buněčné dýchání. Obří a krásný projekt pro trpělivého hráče.</lore>
         </molecule>
 
-        <molecule id="recipe_methanol" count="2">
+        <molecule id="recipe_methanol" count="1">
             <title>Methanol</title>
             <formula>CH3OH</formula>
             <smiles>CO</smiles>
@@ -101,16 +101,7 @@
             <lore>Dřevný líh. Prudce jedovatá kapalina zaměnitelná s ethanolem. Způsobuje slepotu a selhání organismu.</lore>
         </molecule>
 
-        <molecule id="recipe_urea" count="2">
-            <title>Močovina</title>
-            <formula>CH4N2O</formula>
-            <smiles>NC(=O)N</smiles>
-            <points>60</points>
-            <image>assets/molecules/urea.png</image>
-            <lore>Urea. Vysoce účinné dusíkaté hnojivo, které má zároveň nezastupitelnou roli v hydratačních krémech.</lore>
-        </molecule>
-
-        <molecule id="recipe_ammonium_nitrate" count="2">
+        <molecule id="recipe_ammonium_nitrate" count="1">
             <title>Dusičnan amonný</title>
             <formula>NH4NO3</formula>
             <smiles>[NH4+].[O-]N(=O)=O</smiles>
@@ -119,7 +110,7 @@
             <lore>Lédek amonný. Masivně využívané zemědělské hnojivo, které však figuruje jako hlavní složka průmyslových trhavin.</lore>
         </molecule>
 
-        <molecule id="recipe_toluene" count="2">
+        <molecule id="recipe_toluene" count="1">
             <title>Toluen</title>
             <formula>C7H8</formula>
             <smiles>CC1=CC=CC=C1</smiles>
@@ -137,7 +128,7 @@
             <lore>Klasická vojenská i průmyslová výbušnina. Je velmi bezpečná na manipulaci a stabilní – k samotné detonaci bezpodmínečně vyžaduje rozbušku.</lore>
         </molecule>
 
-        <molecule id="recipe_potassium_nitrate" count="2">
+        <molecule id="recipe_potassium_nitrate" count="1">
             <title>Dusičnan draselný</title>
             <formula>KNO3</formula>
             <smiles>[K+].[O-]N(=O)=O</smiles>
@@ -191,24 +182,6 @@
             <lore>Ostrý, štiplavý plyn. Jeho rozpuštěním ve vodě vzniká kyselina chlorovodíková (solná), která nám v žaludku pomáhá trávit potravu a hubit bakterie.</lore>
         </molecule>
 
-        <molecule id="recipe_salicylic_acid" count="1">
-            <title>Kyselina salicylová</title>
-            <formula>C7H6O3</formula>
-            <smiles>OC1=CC=CC=C1C(=O)O</smiles>
-            <points>138</points>
-            <image>assets/molecules/salicylic_acid.png</image>
-            <lore>Beta-hydroxykyselina (BHA) masivně využívaná v kosmetice k čištění pleti a uvolňování ucpaných pórů. Přirozeně se vyskytuje v kůře vrby bílé.</lore>
-        </molecule>
-
-        <molecule id="recipe_lactic_acid" count="1">
-            <title>Kyselina mléčná</title>
-            <formula>C3H6O3</formula>
-            <smiles>CC(C(=O)O)O</smiles>
-            <points>90</points>
-            <image>assets/molecules/lactic_acid.png</image>
-            <lore>V kosmetice se využívá pro hydrataci a omlazení pleti (AHA kyselina). Přirozeně vzniká při mléčném kvašení jogurtů nebo v lidských svalech při extrémní zátěži.</lore>
-        </molecule>
-
         <molecule id="recipe_caffeine" count="1">
             <title>Kofein</title>
             <formula>C8H10N4O2</formula>
@@ -227,7 +200,7 @@
             <lore>Kyselina acetylsalicylová. Jeden z nejrozšířenějších léků na světě, který tlumí bolest, snižuje horečku a potlačuje záněty. Funguje také jako prevence proti srážení krve.</lore>
         </molecule>
 
-        <molecule id="recipe_paracetamol" count="2">
+        <molecule id="recipe_paracetamol" count="1">
             <title>Paracetamol</title>
             <formula>C8H9NO2</formula>
             <smiles>CC(=O)NC1=CC=C(C=C1)O</smiles>
@@ -263,7 +236,7 @@
             <lore>Dusíkatá báze, která tvoří základní stavební kámen lidské DNA a RNA. V kombinaci s cukrem a fosfátem se podílí na vzniku energetické molekuly ATP.</lore>
         </molecule>
 
-        <molecule id="recipe_phosphoric_acid" count="3">
+        <molecule id="recipe_phosphoric_acid" count="1">
             <title>Kyselina fosforečná</title>
             <formula>H3PO4</formula>
             <smiles>O=P(O)(O)O</smiles>

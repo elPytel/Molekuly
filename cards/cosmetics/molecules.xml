@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cards xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../cards.xsd" game="Molekuly" version="1.0">
+
+    <molecules>
+        <molecule id="recipe_urea" count="1">
+            <title>Močovina</title>
+            <formula>CH4N2O</formula>
+            <smiles>NC(=O)N</smiles>
+            <points>60</points>
+            <image>assets/molecules/urea.png</image>
+            <lore>Urea. Vysoce účinné dusíkaté hnojivo, které má zároveň nezastupitelnou roli v hydratačních krémech.</lore>
+        </molecule>
+
+        <molecule id="recipe_salicylic_acid" count="1">
+            <title>Kyselina salicylová</title>
+            <formula>C7H6O3</formula>
+            <smiles>OC1=CC=CC=C1C(=O)O</smiles>
+            <points>138</points>
+            <image>assets/molecules/salicylic_acid.png</image>
+            <lore>Beta-hydroxykyselina (BHA) masivně využívaná v kosmetice k čištění pleti a uvolňování ucpaných pórů. Přirozeně se vyskytuje v kůře vrby bílé.</lore>
+        </molecule>
+
+        <molecule id="recipe_lactic_acid" count="1">
+            <title>Kyselina mléčná</title>
+            <formula>C3H6O3</formula>
+            <smiles>CC(C(=O)O)O</smiles>
+            <points>90</points>
+            <image>assets/molecules/lactic_acid.png</image>
+            <lore>V kosmetice se využívá pro hydrataci a omlazení pleti (AHA kyselina). Přirozeně vzniká při mléčném kvašení jogurtů nebo v lidských svalech při extrémní zátěži.</lore>
+        </molecule>
+
+       <molecule id="recipe_sodium_fluoride" count="1">
+            <title>Fluorid sodný</title>
+            <formula>NaF</formula>
+            <smiles>[Na+].[F-]</smiles>
+            <points>42</points>
+            <image>assets/molecules/sodium_fluoride.png</image>
+            <lore>Klíčová složka zubních past. Fluoridové ionty reagují se zubní sklovinou a přeměňují ji na odolnější hydroxyapatit, čímž aktivně chrání zuby před kyselinami a vznikem kazu.</lore>
+        </molecule>
+
+        <molecule id="recipe_silica" count="1">
+            <title>Silica (Oxid křemičitý)</title>
+            <formula>SiO2</formula>
+            <smiles>O=[Si]=O</smiles>
+            <points>60</points>
+            <image>assets/molecules/silica.png</image>
+            <lore>V zubních pastách funguje jako jemné mechanické abrazivum, které odstraňuje zubní plak. V dekorativní kosmetice (pudrech) zase absorbuje přebytečný kožní maz a matuje pleť.</lore>
+        </molecule>
+
+        <molecule id="recipe_hydrated_silica" count="1">
+            <title>Hydratovaná silica</title>
+            <formula>H2SiO3</formula>
+            <smiles>O=[Si](O)O</smiles>
+            <points>78</points>
+            <image>assets/molecules/hydrated_silica.png</image>
+            <lore>Kyselina křemičitá. Má prokazatelně měkčí a šetrnější částice než čistý křemenný prášek. Čistí povrch zubů mechanicky, ale bez rizika poškrábání citlivé skloviny.</lore>
+        </molecule>
+
+        <molecule id="recipe_novamin" count="1">
+            <title>Fosfokřemičitan sodno-vápenatý</title>
+            <formula>CaNaO6PSi</formula>
+            <smiles>[Na+].[Ca+2].[O-]P(=O)([O-])[O-].O=[Si]=O</smiles>
+            <points>218</points>
+            <image>assets/molecules/novamin.png</image>
+            <lore>Bioaktivní sklo (známé jako NovaMin). V kontaktu se slinami okamžitě uvolňuje ionty vápníku a fosforu, které přirozeně krystalizují přímo na zubech a opravují poškozená místa.</lore>
+        </molecule>
+
+        <molecule id="recipe_citric_acid" count="1">
+            <title>Kyselina citronová</title>
+            <formula>C6H8O7</formula>
+            <smiles>OC(=O)CC(O)(CC(=O)O)C(=O)O</smiles>
+            <points>192</points>
+            <image>assets/molecules/citric_acid.png</image>
+            <lore>Přírodní alfa-hydroxykyselina (AHA). V kosmetice se používá k úpravě pH produktů, aby nedráždily pokožku. V šampónech pomáhá vyhlazovat vlasové kutikuly, které pak lépe odrážejí světlo.</lore>
+        </molecule>
+
+        <molecule id="recipe_propylene_glycol" count="1">
+            <title>Propylenglykol</title>
+            <formula>C3H8O2</formula>
+            <smiles>CC(O)CO</smiles>
+            <points>76</points>
+            <image>assets/molecules/propylene_glycol.png</image>
+            <lore>Intenzivní zvlhčovadlo (humektant). Navazuje na sebe vlhkost z okolí a uzamyká ji v kůži. Zároveň pomáhá ostatním aktivním látkám pronikat hlouběji do epidermis.</lore>
+        </molecule>
+
+        <molecule id="recipe_hexylene_glycol" count="1">
+            <title>Hexylenglykol</title>
+            <formula>C6H14O2</formula>
+            <smiles>CC(O)CC(C)(C)O</smiles>
+            <points>118</points>
+            <image>assets/molecules/hexylene_glycol.png</image>
+            <lore>Multifunkční organické rozpouštědlo. Snižuje viskozitu kosmetických přípravků, díky čemuž jsou husté krémy a emulze tekutější, hladší a podstatně lépe se roztírají.</lore>
+        </molecule>
+
+        <molecule id="recipe_panthenol" count="1">
+            <title>Panthenol</title>
+            <formula>C9H19NO4</formula>
+            <smiles>CC(C)(CO)C(O)C(=O)NCCCO</smiles>
+            <points>205</points>
+            <image>assets/molecules/panthenol.png</image>
+            <lore>Provitamín B5. Má hluboké zklidňující vlastnosti, stimuluje obnovu buněk a udržuje hydrataci. Naprostý základ všech hojivých mastí a regeneračních krémů po opalování.</lore>
+        </molecule>
+
+        <molecule id="recipe_limonene" count="1">
+            <title>Limonen</title>
+            <formula>C10H16</formula>
+            <smiles>CC1=CCC(CC1)C(=C)C</smiles>
+            <points>136</points>
+            <image>assets/molecules/limonene.png</image>
+            <lore>Citrusový terpen obsažený v kůře pomerančů. Dodává kosmetice svěží ovocnou vůni. Má silné demaskovací schopnosti a dokáže účinně odmašťovat povrchy.</lore>
+        </molecule>
+
+        <molecule id="recipe_linalool" count="1">
+            <title>Linalool</title>
+            <formula>C10H18O</formula>
+            <smiles>CC(=CCCC(C)(C=C)O)C</smiles>
+            <points>154</points>
+            <image>assets/molecules/linalool.png</image>
+            <lore>Vonný terpenový alkohol, který najdeme v levanduli nebo jasmínu. Dodává krémům a parfémům příjemné květinové tóny, v legislativě však patří mezi hlídané potenciální alergeny.</lore>
+        </molecule>
+
+        <molecule id="recipe_carbomer_monomer" count="1">
+            <title>Karbomer (Základ gelů)</title>
+            <formula>C3H4O2</formula>
+            <smiles>C=CC(=O)O</smiles>
+            <points>72</points>
+            <image>assets/molecules/carbomer_monomer.png</image>
+            <lore>Kyselina akrylová (monomer karbomeru). Tento syntetický polymer dokáže ve vodě absorbovat až tisícinásobek své váhy. Používá se jako zahušťovadlo pro čiré pleťové gely a dezinfekce.</lore>
+        </molecule>
+
+        <molecule id="recipe_sodium_bromide" count="1">
+            <title>Bromid sodný</title>
+            <formula>NaBr</formula>
+            <smiles>[Na+].[Br-]</smiles>
+            <points>103</points>
+            <image>assets/molecules/sodium_bromide.png</image>
+            <lore>Anorganická sůl. V šampónech a tekutých mýdlech se používá k přesné regulaci hustoty a viskozity. V historii sloužil také jako bezpečný mírný konzervační prostředek.</lore>
+        </molecule>
+
+    </molecules>
+</cards>

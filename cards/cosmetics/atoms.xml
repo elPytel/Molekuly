@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cards xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../cards.xsd" game="Molekuly" version="1.0">
+    
+    <atoms>
+        <atom id="atom_F" count="4">
+            <symbol>F</symbol>
+            <name>Fluor</name>
+            <weight>19</weight>
+            <color>#90EE90</color>
+            <textColor>#000000</textColor>
+            <valence_electrons>7</valence_electrons>
+        </atom>
+        <atom id="atom_Si" count="4">
+            <symbol>Si</symbol>
+            <name>Křemík</name>
+            <weight>28</weight>
+            <color>#708090</color>
+            <textColor>#FFFFFF</textColor>
+            <valence_electrons>4</valence_electrons>
+        </atom>
+        <atom id="atom_Br" count="2">
+            <symbol>Br</symbol>
+            <name>Brom</name>
+            <weight>80</weight>
+            <color>#A52A2A</color>
+            <textColor>#FFFFFF</textColor>
+            <valence_electrons>7</valence_electrons>
+        </atom>
+    </atoms>
+</cards>
