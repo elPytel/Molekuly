@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cards xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../cards.xsd" game="Molekuly" version="1.0">
+    
+    <atoms>
+        <atom id="atom_Fe" count="6">
+            <symbol>Fe</symbol>
+            <name>Železo</name>
+            <weight>56</weight>
+            <color>#D4D7D9</color>
+            <textColor>#000000</textColor>
+            <valence_electrons>2</valence_electrons>
+        </atom>
+        <atom id="atom_Al" count="4">
+            <symbol>Al</symbol>
+            <name>Hliník</name>
+            <weight>27</weight>
+            <color>#A9ACB0</color>
+            <textColor>#000000</textColor>
+            <valence_electrons>3</valence_electrons>
+        </atom>
+
+        <atom id="atom_Ca" count="6">
+            <symbol>Ca</symbol>
+            <name>Vápník</name>
+            <weight>40</weight>
+            <color>#FFD700</color>
+            <textColor>#000000</textColor>
+            <valence_electrons>2</valence_electrons>
+        </atom>
+        <atom id="atom_Cu" count="4">
+            <symbol>Cu</symbol>
+            <name>Měď</name>
+            <weight>64</weight>
+            <color>#D2691E</color>
+            <textColor>#FFFFFF</textColor>
+            <valence_electrons>2</valence_electrons>
+        </atom>
+
+        <atom id="atom_Ag" count="4">
+            <symbol>Ag</symbol>
+            <name>Stříbro</name>
+            <weight>108</weight>
+            <color>#E6E6E6</color>
+            <textColor>#000000</textColor>
+            <valence_electrons>1</valence_electrons>
+        </atom>
+        
+        <atom id="atom_Au" count="2">
+            <symbol>Au</symbol>
+            <name>Zlato</name>
+            <weight>197</weight>
+            <color>#FFD700</color>
+            <textColor>#000000</textColor>
+            <valence_electrons>1</valence_electrons>
+        </atom>
+    </atoms>
+</cards>

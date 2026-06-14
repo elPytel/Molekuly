@@ -36,6 +36,10 @@
 
 ## Průběh herního kola
 
+Hráč může ve svém tahu rozebrat jakoukoliv molekulu nebo strukturu, která už na stole leží. Může z ní vytrhnout jednotlivé atomy, odpojit celé funkční skupiny (např. methany nebo hydroxyly) a libovolně je kombinovat s kartami ze své ruky.
+
+Platí zde ale jedno tvrdé žolíkové pravidlo: Na konci tahu hráče musí všechny karty, které zůstaly na stole, tvořit chemicky validní struktury. Pokud hráč začne stůl přerovnávat, ale v polovině se zamotá a na stole mu zůstane viset izolovaný kyslík s neukončenými vazbami, jeho tah je nevalidní. Musí buď situaci vyřešit kartami z ruky, nebo vrátit stůl do původního stavu a za trest si líznout kartu z balíčku.
+
 Hráči se střídají po směru hodinových ručiček. Ve svém tahu má hráč dvě možnosti:
 
 ### Možnost A: Chemická reakce (Akce na stole)
@@ -68,7 +72,7 @@ Hráč může během tahu brát karty atomů ze stolu zpátky do roku, ale musí
 ## Konec hry a vyhodnocení
 
 * **Konec kola:** Kolo končí v momentě, kdy jeden z hráčů **zavře**, tedy úspěšně vyloží svou poslední kartu z ruky na stůl a stůl zůstane stabilní.
-* **Penalizace za neuklizenou ruku:** Ostatní hráči si spočítají hodnotu karet atomů, které jim zůstaly na ruce. Každý atom bolí podle své reálné hmotnosti (Vodík = 1 bod, ale Chlór = 35 bodů!).
+* **Penalizace za neuklizenou ruku:** Ostatní hráči si spočítají hodnotu karet atomů, které jim zůstaly na ruce. Každý atom se započítá podle své reálné hmotnosti (Vodík = 1 bod, ale Chlór = 35 bodů!).
 * **Výpočet skóre:** Výsledné skóre hráče za dané kolo se spočítá jako:
 `[Body za získané karty receptů] − [Součet hmotností atomů, které mu zůstaly na ruce]`.
-* **Vítězství:** Hraje se buď na pevný počet kol (např. 3 kola), nebo do chvíle, než někdo dosáhne hranice např. 300 bodů. Vyhrává hráč s nejvyšším počtem bodů.
+* **Vítězství:** Vyhrává hráč s nejvyšším počtem bodů.

@@ -25,3 +25,8 @@ Pro sestavení balíčku s vybranými DLC je možné spustit příkaz:
 make clean
 make DLC_NAMES="vitamins"
 ```
+
+### Jednotlivé DLC
+
+- [DLC: Vitamíny](DOC/vitam%C3%ADny.md)
+- [DLC: Metalurgie](DOC/metallurgy.md)

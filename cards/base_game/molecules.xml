@@ -8,7 +8,7 @@
             <smiles>O</smiles>
             <points>18</points>
             <image>assets/molecules/h2o.png</image>
-            <lore>Oxid vodný. Základní stavební kámen života a nejjednodušší cíl pro začátek hry.</lore>
+            <lore>Oxid vodný. Základní stavební kámen života.</lore>
         </molecule>
 
         <molecule id="recipe_salt" count="3">

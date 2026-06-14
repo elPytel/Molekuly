@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cards xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../cards.xsd" game="Molekuly" version="1.0">
+    
+    <molecules>
+        <molecule id="recipe_hematite" count="1">
+            <title>Hematit (Železná ruda / Rez)</title>
+            <formula>Fe2O3</formula>
+            <smiles>O=[Fe]O[Fe]=O</smiles>
+            <points>160</points>
+            <image>assets/molecules/hematite.png</image>
+            <lore>Oxid železitý. Nejdůležitější ruda pro výrobu surového železa. Zároveň je to hlavní chemická složka rzi, která vzniká korozí čistého kovu za přítomnosti vlhka a kyslíku.</lore>
+        </molecule>
+
+        <molecule id="recipe_magnetite" count="1">
+            <title>Magnetit</title>
+            <formula>Fe3O4</formula>
+            <smiles>O=[Fe]O[Fe]O[Fe]=O</smiles>
+            <points>232</points>
+            <image>assets/molecules/magnetite.png</image>
+            <lore>Oxid železnato-železitý. Nejbohatší železná ruda s přirozenými magnetickými vlastnostmi. Vzniká také na povrchu železa při kování za vysokých teplot jako okují.</lore>
+        </molecule>
+
+        <molecule id="recipe_alumina" count="1">
+            <title>Oxid hlinitý</title>
+            <formula>Al2O3</formula>
+            <smiles>O=[Al]O[Al]=O</smiles>
+            <points>102</points>
+            <image>assets/molecules/alumina.png</image>
+            <lore>Alumina. Meziprodukt při výrobě hliníku z bauxitu. V přírodě se vyskytuje jako minerál korund, jehož drahokamové odrůdy jsou safír a rubín.</lore>
+        </molecule>
+
+        <molecule id="recipe_coke" count="1">
+            <title>Metalurgický koks</title>
+            <formula>C</formula>
+            <smiles>C</smiles>
+            <points>12</points>
+            <image>assets/molecules/coke.png</image>
+            <lore>Téměř čistý uhlík získaný z černého uhlí bez přístupu vzduchu. Ve vysoké peci slouží jako palivo, ale hlavně jako redukční činidlo, které bere rudě kyslík.</lore>
+        </molecule>
+
+        <molecule id="recipe_limestone" count="1">
+            <title>Vápenec (Struskotvorná přísada)</title>
+            <formula>CaCO3</formula>
+            <smiles>[Ca+2].[O-]C(=O)[O-]</smiles>
+            <points>100</points>
+            <image>assets/molecules/limestone.png</image>
+            <lore>Uhličitan vápenatý. Přidává se do vysoké pece, kde se teplem rozkládá. Jeho úkolem je navázat na sebe hlušinu (písek a jíl) a vytvořit tekutou strusku.</lore>
+        </molecule>
+
+        <molecule id="recipe_lime" count="1">
+            <title>Pálené vápno (Základ strusky)</title>
+            <formula>CaO</formula>
+            <smiles>O=[Ca]</smiles>
+            <points>56</points>
+            <image>assets/molecules/lime.png</image>
+            <lore>Oxid vápenatý. Vzniká přímo ve vysoké peci termickým rozkladem vápence. Okamžitě reaguje s křemičitými nečistotami v rudě, čímž čistí taveninu kovu.</lore>
+        </molecule>
+
+        <molecule id="recipe_copper_ore" count="1">
+            <title>Tenorit (Měděná ruda)</title>
+            <formula>CuO</formula>
+            <smiles>O=[Cu]</smiles>
+            <points>80</points>
+            <image>assets/molecules/copper_ore.png</image>
+            <lore>Oxid měďnatý. Černá minerální ruda. Na rozdíl od železa je její redukce mnohem snazší a lidstvo ji dokázalo vytavit už v době kamenné, což odstartovalo dobu měděnou.</lore>
+        </molecule>
+
+        <molecule id="recipe_malachite_dust" count="1">
+            <title>Malachit (Kosmetika i ruda)</title>
+            <formula>CuCO3</formula>
+            <smiles>[Cu+2].[O-]C(=O)[O-]</smiles>
+            <points>124</points>
+            <image>assets/molecules/malachite.png</image>
+            <lore>Uhličitan měďnatý. Nádherný zelený minerál. V egyptské kosmetice sloužil jako oční stíny, v metalurgii jako snadno dostupný zdroj čisté mědi.</lore>
+        </molecule>
+
+        <molecule id="recipe_sodium_cyanide" count="1">
+            <title>Kyanid sodný</title>
+            <formula>NaCN</formula>
+            <smiles>[Na+].[C-]#N</smiles>
+            <points>49</points>
+            <image>assets/molecules/sodium_cyanide.png</image>
+            <lore>Prudce jedovatá sůl. V metalurgii je naprosto nezastupitelná, protože kyanidový aniont dokáže jako jeden z mála vytvořit stabilní rozpustný komplex s drahými kovy.</lore>
+        </molecule>
+
+        <molecule id="recipe_gold_complex" count="1">
+            <title>Kyanidový komplex zlata</title>
+            <formula>NaAu(CN)2</formula>
+            <smiles>[Na+].[Au+].[C-]#N.[C-]#N</smiles>
+            <points>272</points>
+            <image>assets/molecules/gold_complex.png</image>
+            <lore>Dikyanozlatan sodný. Rozpustná forma zlata, která vzniká loužením zlatonosné horniny kyanidem za přítomnosti vzdušného kyslíku (Elsnerova reakce).</lore>
+        </molecule>
+
+        <molecule id="recipe_silver_complex" count="1">
+            <title>Kyanidový komplex stříbra</title>
+            <formula>NaAg(CN)2</formula>
+            <smiles>[Na+].[Ag+].[C-]#N.[C-]#N</smiles>
+            <points>183</points>
+            <image>assets/molecules/silver_complex.png</image>
+            <lore>Dikyanoztříbrňan sodný. Komplexní sloučenina využívaná k získávání stříbra z rud nebo při galvanickém stříbření předmětů v klenotnictví.</lore>
+        </molecule>
+    </molecules>
+</cards>
