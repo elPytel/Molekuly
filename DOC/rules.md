@@ -14,7 +14,12 @@
 
 ## Přehled komponentů
 
+
 ### 1. Karty atomů (Suroviny)
+
+![](../assets/carbon.png)
+
+![](../assets/Atom.png)
 
 * Každá karta představuje jeden chemický prvek.
 * **Grafika:** Používá mezinárodní barevné kódování (H = bílá, C = černá, O = červená, N = modrá, Cl = zelená).
@@ -22,6 +27,8 @@
 * **Hodnota:** V rohu karty je uvedeno číslo odpovídající přibližné atomové hmotnosti prvku (H=1, C=12, N=14, O=16, Na=23, Cl=35). Toto číslo slouží jako cena karty na ruce na konci hry.
 
 ### 2. Karty receptů (Úkoly)
+
+![](../assets/glukóza.png)
 
 * **Obsah:** Reálné sloučeniny z běžného života (kuchyňská sůl, ocet, mýdlo/glycerol, ethanol, ale i chlorový plyn či nitroglycerin).
 * **Vzorec a schéma:** Karta obsahuje chemický vzorec a nákres, jak přesně musí karty na stole ležet, aby byla molekula správně poskládaná.

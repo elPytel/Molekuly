@@ -1,6 +1,10 @@
 # Molekuly
 Karetní hra ve stylu Rummikup či Žolíků, která je o stavbě molekul
 
+![](./assets/Atom.png)
+![](./assets/carbon.png)
+![](./assets/glukóza.png)
+
 ## Pravidla hry
 
 Viz [DOC/rules.md](DOC/rules.md)
