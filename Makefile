@@ -152,7 +152,10 @@ $(HTML_CARDS): $(XSL_CARDS) $(MERGED) | $(HTML_DIR)
 	@xsltproc --stringparam mode $(MODE) --stringparam colorMode $(COLOR) -o $(HTML_CARDS) $(XSL_CARDS) $(MERGED)
 	@printf "$(GREEN)Generated html out of cards for PDF(s) in $(BLUE)%s$(GREEN) (from $(BLUE)%s$(GREEN)) (mode=$(BLUE)%s$(GREEN), color=$(BLUE)%s$(GREEN))$(RESET)\n" "$(OUT_DIR)" "$(MERGED)" "$(MODE)" "$(COLOR)"
 
-$(ASSETS_STAMP): $(shell find $(ASSETS_DIR) -type f) | $(HTML_DIR)
+# Generate optimized assets and check for missing molecule images via RDKit
+$(ASSETS_STAMP): $(MERGED) $(shell find $(ASSETS_DIR) -type f 2>/dev/null) | $(HTML_DIR)
+	@printf "$(YELLOW)Checking for missing molecule images via RDKit...$(RESET)\n"
+	$(PY) $(TOOLS_DIR)/generate_molecules.py $(MERGED)
 	@printf "$(YELLOW)Optimizing images from $(ASSETS_DIR)/ to $(HTML_DIR)/assets/$(RESET)\n"
 	$(PY) $(TOOLS_DIR)/optimize_images.py $(ASSETS_DIR) $(HTML_DIR)/assets
 	@touch $@

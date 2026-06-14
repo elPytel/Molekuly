@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cards xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../cards.xsd" game="Molekuly" version="1.0">
+    
+    <molecules>
+        <molecule id="recipe_vitamin_c" count="1">
+            <title>Vitamín C</title>
+            <formula>C6H8O6</formula>
+            <smiles>C(C1C(C(C(O1)O)O)O)=C(O)C(=O)O</smiles>
+            <points>176</points>
+            <image>assets/molecules/vitamin_c.png</image>
+            <lore>Kyselina askorbová. Klíčový antioxidant nezbytný pro imunitu a tvorbu kolagenu. Lidé ho na rozdíl od většiny zvířat nedokážou sami syntetizovat.</lore>
+        </molecule>
+
+        <molecule id="recipe_vitamin_b3" count="2">
+            <title>Vitamín B3</title>
+            <formula>C6H5NO2</formula>
+            <smiles>O=C(O)c1ccncc1</smiles>
+            <points>123</points>
+            <image>assets/molecules/vitamin_b3.png</image>
+            <lore>Niacin. Podílí se na metabolismu sacharidů a tuků. Jeho nedostatek v potravě způsobuje nemoc zvanou pelagra (drsná kůže).</lore>
+        </molecule>
+
+        <molecule id="recipe_vitamin_b6" count="2">
+            <title>Vitamín B6</title>
+            <formula>C8H11NO3</formula>
+            <smiles>Cc1ncc(CO)c(CO)c1O</smiles>
+            <points>169</points>
+            <image>assets/molecules/vitamin_b6.png</image>
+            <lore>Pyridoxin. Hraje naprosto zásadní roli v metabolismu aminokyselin a při tvorbě červených krvinek. Podporuje správnou funkci nervového systému a imunity.</lore>
+        </molecule>
+
+        <molecule id="recipe_vitamin_b5" count="1">
+            <title>Vitamín B5</title>
+            <formula>C9H17NO5</formula>
+            <smiles>CC(C)(CO)C(O)C(=O)NCCC(=O)O</smiles>
+            <points>219</points>
+            <image>assets/molecules/vitamin_b5.png</image>
+            <lore>Kyselina pantothenová. Je nezbytná pro správný metabolismus všech živin v těle. Její upravená forma (panthenol) se masivně využívá v kosmetice pro regeneraci kůže a vlasů.</lore>
+        </molecule>
+
+        <molecule id="recipe_vitamin_b7" count="1">
+            <title>Vitamín B7</title>
+            <formula>C10H16N2O3S</formula>
+            <smiles>C1C2C(C(S1)CCCCC(=O)O)NC(=O)N2</smiles>
+            <points>244</points>
+            <image>assets/molecules/vitamin_b7.png</image>
+            <lore>Biotin neboli vitamín H. Výborně herně zapojuje atom Síry do složité organické struktury. Je klíčový pro zdraví nehtů, kůže a podporuje růst vlasů.</lore>
+        </molecule>
+
+        <molecule id="recipe_vitamin_a" count="1">
+            <title>Vitamín A</title>
+            <formula>C20H30O</formula>
+            <smiles>CC1=C(C(CCC1)(C)C)C=CC(=CC=CC(=CCO)C)C</smiles>
+            <points>286</points>
+            <image>assets/molecules/vitamin_a.png</image>
+            <lore>Retinol. Vitamín rozpustný v tucích. Je naprosto klíčový pro správný mechanismus vidění (tvorbu zrakového purpuru), zdraví sliznic a imunitní odpověď.</lore>
+        </molecule>
+
+        <molecule id="recipe_vitamin_b1" count="2">
+            <title>Vitamín B1</title>
+            <formula>C12H17ClN4OS</formula>
+            <smiles>Cc1ncc(C[n+]2csc(CCO)c2C)c(N)n1.[Cl-]</smiles>
+            <points>300</points>
+            <image>assets/molecules/vitamin_b1.png</image>
+            <lore>Thiamin. Klíčový koenzym pro přeměnu sacharidů na energii. Jeho fatální nedostatek v potravě způsobuje nervové onemocnění beri-beri.</lore>
+        </molecule>
+
+        <molecule id="recipe_vitamin_b2" count="2">
+            <title>Vitamín B2</title>
+            <formula>C17H20N4O6</formula>
+            <smiles>Cc1cc2c(cc1C)N(C3=NC(=O)NC(=O)C3=N2)CC(C(C(CO)O)O)O</smiles>
+            <points>376</points>
+            <image>assets/molecules/vitamin_b2.png</image>
+            <lore>Riboflavin. Důležitý pro správnou funkci buněčného dýchání, metabolismus kůže a očí. Při nedostatku vznikají bolestivé koutky úst.</lore>
+        </molecule>
+
+        <molecule id="recipe_vitamin_b9" count="1">
+            <title>Vitamín B9</title>
+            <formula>C19H19N7O6</formula>
+            <smiles>C1=CC(=CC=C1C(=O)NC(CCC(=O)O)C(=O)O)NCC2=CN=C3C(=N2)C(=O)NC(=N3)N</smiles>
+            <points>441</points>
+            <image>assets/molecules/vitamin_b9.png</image>
+            <lore>Kyselina listová. Naprosto esenciální pro syntézu nukleových kyselin (DNA) a pro rychlé dělení buněk. Její dostatečný příjem je kritický během těhotenství.</lore>
+        </molecule>
+
+        <molecule id="recipe_vitamin_d3" count="1">
+            <title>Vitamín D3</title>
+            <formula>C27H44O</formula>
+            <smiles>CC(C)CCCC(C)C1CCC2C1(CCCC2=CC=C3CC(CCC3=C)O)C</smiles>
+            <points>384</points>
+            <image>assets/molecules/vitamin_d3.png</image>
+            <lore>Cholekalciferol. Syntetizuje se v kůži působením slunečního UV záření. Řídí vstřebávání vápníku a fosforu, čímž zajišťuje tvrdost kostí a zubů.</lore>
+        </molecule>
+
+        <molecule id="recipe_vitamin_e" count="1">
+            <title>Vitamín E</title>
+            <formula>C29H50O2</formula>
+            <smiles>CC1=C(C2=C(C(=C1C)O)CCC(O2)(C)CCCC(C)CCCC(C)CCCC(C)C)C</smiles>
+            <points>430</points>
+            <image>assets/molecules/vitamin_e.png</image>
+            <lore>Alfa-tokoferol. Nejdůležitější antioxidant v těle rozpustný v tucích. Chrání buněčné membrány před poškozením volnými radikály a zpomaluje stárnutí buněk.</lore>
+        </molecule>
+
+        <molecule id="recipe_vitamin_k1" count="1">
+            <title>Vitamín K1</title>
+            <formula>C31H46O2</formula>
+            <smiles>CC1=C(C(=O)c2ccccc2C1=O)CC=C(C)CCCC(C)CCCC(C)CCCC(C)C</smiles>
+            <points>450</points>
+            <image>assets/molecules/vitamin_k1.png</image>
+            <lore>Fyllochinon. Rostlinná forma vitamínu K, který v těle bezprostředně řídí syntézu koagulačních faktorů v játrech. Je naprosto nezbytný pro srážlivost krve.</lore>
+        </molecule>
+
+        <molecule id="recipe_vitamin_b12" count="0">
+            <title>Vitamín B12</title>
+            <formula>C6H88CoN14O14P</formula>
+            <smiles>CC1=CC2=C(C=C1C)N(C=N2)[C@@H]3[C@@H]([C@@H]([C@H](O3)CO)OP(=O)([O-])O[C@H](C)CNC(=O)CC[C@@]4([C@H]([C@@H]5[C@]6([C@@]([C@@H](C(=N6)/C(=C\7/[C@@]([C@@H](C(=N7)/C=C\8/C([C@@H](C(=N8)/C(=C4\[N-]5)/C)CCC(=O)N)(C)C)CCC(=O)N)(C)CC(=O)N)/C)CCC(=O)N)(C)CC(=O)N)C)CC(=O)N)C)O.[C-]#N.[Co+3]</smiles>
+            <points>1354</points>
+            <image>assets/molecules/vitamin_b12.png</image>
+            <lore>Kyanokobalamin. Gigantická a nejsložitější struktura mezi vitamíny. Obsahuje vzácný iont kobaltu. Je kritický pro tvorbu krve a správnou funkci nervové soustavy.</lore>
+        </molecule>
+    </molecules>
+</cards>

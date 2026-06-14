@@ -18,7 +18,7 @@
 
   <xs:simpleType name="CountInt">
     <xs:restriction base="xs:integer">
-      <xs:minInclusive value="1" />
+      <xs:minInclusive value="0" />
       <xs:maxInclusive value="50" />
     </xs:restriction>
   </xs:simpleType>
@@ -46,6 +46,7 @@
     <xs:sequence>
       <xs:element name="title" type="xs:string" />
       <xs:element name="formula" type="xs:string" />
+      <xs:element name="smiles" type="xs:string" />
       <xs:element name="points" type="xs:integer" />
       <xs:element name="image" type="xs:string" />
       <xs:element name="lore" type="xs:string" />

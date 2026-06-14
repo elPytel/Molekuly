@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cards xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../cards.xsd" game="Molekuly" version="1.0">
+    
+    <atoms>
+        <atom id="atom_Co" count="0">
+            <symbol>Co</symbol>
+            <name>Kobalt</name>
+            <weight>59</weight>
+            <color>#4682B4</color>
+            <textColor>#FFFFFF</textColor>
+            <valence_electrons>3</valence_electrons>
+        </atom>
+    </atoms>
+</cards>
